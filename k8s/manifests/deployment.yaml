@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: harsh042/go-web-app:v1
+        image: harsh042/go-web-app
         ports:
         - containerPort: 8080

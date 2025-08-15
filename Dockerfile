@@ -1,5 +1,5 @@
 # Stage 1: Build the Go binary
-FROM golang:1.22.6 AS builder
+FROM golang:1.21.0 AS builder
 
 WORKDIR /app
 
@@ -25,5 +25,3 @@ COPY --from=builder /app/static ./static
 EXPOSE 8080
 
 CMD ["./main"]
-
-
